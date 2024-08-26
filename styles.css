@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+
+/* Styles for the hero container */
+.hero {
+    display: flex;                   /* Enables flexbox layout */
+    justify-content: center;         /* Centers items horizontally */
+    align-items: center;             /* Centers items vertically */
+    height: 100vh;                   /* Makes the hero section full viewport height */
+    position: relative;              /* Positions children relative to this container */
+}
+
+/* Styles for the image inside the hero section */
+.hero img {
+    width: 100%;                     /* Full width of the container */
+    height: 100%;                    /* Full height of the container */
+    object-fit: cover;               /* Ensures the image covers the container and maintains its aspect ratio */
+    position: absolute;              /* Positions image absolutely to fill the hero container */
+    top: 0;
+    left: 0;
+}
+
+/* Styles for the "Explore Now" button */
+.explore-btn {
+    padding: 10px 20px;              /* Padding inside the button */
+    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent white background */
+    color: #000;                     /* Text color */
+    border-radius: 5px;              /* Rounded corners */
+    text-decoration: none;           /* Removes underline from link */
+    z-index: 1;                      /* Ensures the button appears above the image */
+    font-weight: bold;               /* Makes the text bold */
+    position: relative;              /* Positions button in the flow of the hero container */
+}
+
